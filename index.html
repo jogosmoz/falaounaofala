@@ -26,8 +26,8 @@
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ telefone }),
-                });
+                    body: JSON.stringify({ phone: telefone }), // Atualizado para enviar como 'phone'
+        });
 
                 if (response.ok) {
                     const data = await response.json();
